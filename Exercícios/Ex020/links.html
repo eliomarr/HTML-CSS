@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren (filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*retira o sublinhado do link dos sites*/
+            font-weight: bold; /*link em negrito*/
+        }
+
+        a:visited {
+            color: darkred; /*altera a cor do link do site já visitado*/            
+        }
+
+        a:hover { 
+            color: black; /*quando pasar o mouse em cima do link, aparecerá na cor preta*/
+            text-decoration: underline; /*quando passar o  mouse em cima do link, este aparecerá sublinhado*/
+        }
+
+        a:active {
+            color: yellow; /*ao clicar no link (e segurar para ver o efeito, ou configurar para abrir em uma nova aba), o mesmo ficará na cor amarela*/
+        }
+
+        /*quando tiver apenas ":" significa uma pseudo-classe (exemplos acima)
+          quando tiver "::" significa um pseudo-elemento (exemplos abaixo)*/
+
+        /*
+          a::after { // depois
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        */
+
+        /*altera a cor de fundo apenas da classe espcial (Youtube e Curso em Vídeo)*/
+        .especial {
+            background-color: rgb(255, 140, 140);
+        }
+        
+        /*antes do link, insere apenas na classe especial (Youtube e Curso em Vídeo)*/
+        .especial::before {
+            content: '⇒ ';
+        }
+
+        /*depois do link, insere apenas na classe especial (Youtube e Curso em Vídeo)*/
+        .especial::after {
+            content: ' 	⇐';
+        }        
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repósito GitHub</a></li> 
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do Curso em Vídeo</a></li>
+    </ul>    
+</body>
+</html>
