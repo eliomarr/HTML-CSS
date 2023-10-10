@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
+            
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /*adapta a imagem ao tamanho da tela*/
-        }
+            background-attachment: fixed; /*rola apenas o texto, fixando o fundo*/
+
+            /*Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            Obs.: size declarar em separado, pois não tem efeito "junto"!
+            */
+            /* Em resumo... a linha abaixo substitui todo o conteúdo acima!
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }*/
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,6 +39,14 @@
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio rerum, similique dicta aspernatur tenetur velit excepturi pariatur natus aliquid a reiciendis incidunt laudantium laboriosam inventore! Sapiente repellat ipsam tempore excepturi?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, modi dolor! Cumque quidem aperiam fuga mollitia inventore magni quis, perspiciatis ipsum, repellat et expedita! Praesentium asperiores fugiat labore sed ducimus.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate soluta et quas vel id officia sit praesentium, dignissimos doloremque ipsam consectetur assumenda, natus unde molestias iste adipisci nisi at?</p>
     </main>    
 </body>
