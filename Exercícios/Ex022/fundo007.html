@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /*é fundamental para a centralização a inserção deste comando!*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            position: absolute; /*é fundamental para a centralização a inserção deste comando!*/
+            height: 200px;
+            width: 400px;            
+            background-color: yellow;
+            left: 50%; /*é fundamental para a centralização a inserção deste comando!*/
+            top: 50%; /*é fundamental para a centralização a inserção deste comando!*/
+
+            transform: translate(-50%, -50%); /*centraliza a caixa no meio da tela*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
