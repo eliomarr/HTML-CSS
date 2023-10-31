@@ -11,6 +11,7 @@
 
         table {
             width: 400px;
+            border-collapse: collapse; /*elimina o espaço entre linhas*/
         }
 
         td, th {
@@ -28,6 +29,11 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n) { /*cria o efeito "zebrado" na tabela*/
+        /*pode também ser usado (odd) ímpar ou (even) par*/
+                background-color: lightgray;
         }
 
         td.num {
