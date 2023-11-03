@@ -12,6 +12,7 @@
         table {
             width: 400px;
             border-collapse: collapse; /*elimina o espaço entre linhas*/
+            position: relative;
         }
 
         td, th {
@@ -27,11 +28,22 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
 
-        tbody > tr:nth-child(2n) { /*cria o efeito "zebrado" na tabela*/
+        thead > tr > th {
+            position: sticky;
+            top: -1; /*fixa o cabeçalho das colunas*/
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /*cria o efeito "zebrado" na tabela*/
+        /*pode também ser usado (odd) ímpar ou (even) par*/
+                background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /*cria o efeito "zebrado" na tabela*/
         /*pode também ser usado (odd) ímpar ou (even) par*/
                 background-color: lightgray;
         }
